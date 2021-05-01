@@ -1,6 +1,5 @@
 import TreeNode from './treeNode';
 
-
 const validateNode = (element) => {
     if(typeof element === "string" || typeof element === "number"){
         return true
@@ -73,14 +72,11 @@ const createDataStrcuture = (array) => {
     }
 
     return new TreeNode(id,left,right)
-
 }
 
 const parseArray = (array) =>{
-    if(validateArray(array)){
-        console.log( JSON.stringify(createDataStrcuture(array)))
-    }
-
+    if(validateArray(array)) return JSON.stringify(createDataStrcuture(array))
+    else return false
 }
 
 export default parseArray;

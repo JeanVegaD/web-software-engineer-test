@@ -17,7 +17,6 @@ const App = () => {
             <Header />
             <InputArray />
             <OutputJson />
-            <Output />
         </>      
     )
 }

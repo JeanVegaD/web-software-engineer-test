@@ -4,8 +4,7 @@ import '../styles/index.css'
 import Header from '../components/header.js'
 import InputArray from '../components/inputArray.js'
 import OutputJson from '../components/outputJson.js'
-//import Output from '../components/output.js'
-
+import Output from '../components/output.js'
 
 const App = () => {
     const [inputArr, setInputArr] = useState('')
@@ -30,6 +29,9 @@ const App = () => {
                  setInputJson = {setInputJson}
                  setInputJsonError = {setInputJsonError}
                  setBinTree = {setBinTree}
+            />
+            <Output 
+                binTree={binTree}
             />
         </>      
     )

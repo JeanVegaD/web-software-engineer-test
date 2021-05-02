@@ -1,0 +1,28 @@
+.outputArea{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.parent{
+    width: fit-content;
+    padding: 10px; 
+    border: solid 2px purple;
+    margin: 5px;
+      
+}
+
+.children{
+    padding: 10px;   
+    border: solid 2px peru;
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+.id{
+    font-weight: bold;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import PropTypes from 'prop-types'
 
 import "../styles/inputArray.css"
@@ -15,7 +15,6 @@ const InputArray = ( {
 } ) => {
 
     const handleSetFieldInputArr = (event) => {
-        handleSetFieldsetInputArrError(false)
         setInputArr(event.target.value)
     }
 
@@ -24,17 +23,14 @@ const InputArray = ( {
     }
     
     const handleFillSampleData1 = () => {
-        handleSetFieldsetInputArrError(false)
         setInputArr(JSON.stringify(sampleData1))
     }
 
     const handleFillSampleData2 = () => {
-        handleSetFieldsetInputArrError(false)
         setInputArr(JSON.stringify(sampleData2))
     }
 
     const handleFetch = () => {
-        handleSetFieldsetInputArrError(false)
         try {
             const parse = parseArray(JSON.parse(inputArr))
             if(parse) setInputJson(parse)
@@ -43,6 +39,10 @@ const InputArray = ( {
             handleSetFieldsetInputArrError(true)
         }
     }
+
+    useEffect(() => {
+        handleSetFieldsetInputArrError(false)
+    }, [inputArr])
 
     return (
         <div className="content-wrapper">

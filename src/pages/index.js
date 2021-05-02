@@ -10,8 +10,8 @@ import OutputJson from '../components/outputJson.js'
 const App = () => {
     const [inputArr, setInputArr] = useState('')
     const [inputArrError, setInputArrError] = useState(false)
-
     const [inputJson, setInputJson] = useState('')
+    const [inputJsonError, setInputJsonError] = useState(false)
 
     return (
         <>
@@ -23,7 +23,12 @@ const App = () => {
                 setInputArrError = {setInputArrError}
                 setInputJson={setInputJson}
             />
-            <OutputJson />
+            <OutputJson 
+                 inputJson = {inputJson}
+                 inputJsonError = {inputJsonError}
+                 setInputJson = {setInputJson}
+                 setInputJsonError = {setInputJsonError}
+            />
         </>      
     )
 }

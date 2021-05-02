@@ -2,28 +2,27 @@
 class TreeNode {
   constructor(id,left,right) {
     this.id = id 
-    if(left !== null || right !== null){
+    if(left != null && right != null){
       this.left = left
+      this.right = right
+    }
+    else if(left === null && right != null){
+      this.left = null
       this.right = right
     }
   }
 
-  getID() {
+  get getID() {
     return this.id
   }
 
-  getLeft() {
+  get getLeft() {
     return this.left
   }
 
-  getRight() {
+  get getRight() {
     return this.right
   }
-
-  getTreeJson(){
-
-  }
-
 
 }
 

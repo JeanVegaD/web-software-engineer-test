@@ -21,7 +21,22 @@
     border-radius: 0;
     border: solid 1px lightgrey;
     padding: 10px 15px 10px 15px;
+}
+
+.content .inputError {
+    border: solid 1px red;
+
+}
+
+.spanBox{
+    width: 100%;
     margin-bottom: 15px;
+}
+
+.content span{
+    font-size: 15px;
+    font-weight: bold;
+    color: red; 
 }
 
 .content button {
@@ -37,6 +52,10 @@
 
 .content button:hover {
     opacity: 0.8;
+}
+
+.content button:disabled {
+    background-color: lightgrey;
 }
 
 .content .secondaryButton{

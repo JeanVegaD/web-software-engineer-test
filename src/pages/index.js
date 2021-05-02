@@ -1,21 +1,28 @@
-import React from "react"
-import '../styles/index.css';
-import parseArray from '../utils/transformArray.js'
+import React, { useState } from "react"
+import '../styles/index.css'
 
 import Header from '../components/header.js'
 import InputArray from '../components/inputArray.js'
 import OutputJson from '../components/outputJson.js'
-import Output from '../components/output.js'
+//import Output from '../components/output.js'
 
 
 const App = () => {
+    const [inputArr, setInputArr] = useState('')
+    const [inputArrError, setInputArrError] = useState(false)
 
-    parseArray([1, [2], [3, null, [5]]] )
+    const [inputJson, setInputJson] = useState('')
 
     return (
         <>
             <Header />
-            <InputArray />
+            <InputArray 
+                inputArr = {inputArr}
+                inputArrError = {inputArrError}
+                setInputArr = {setInputArr}
+                setInputArrError = {setInputArrError}
+                setInputJson={setInputJson}
+            />
             <OutputJson />
         </>      
     )

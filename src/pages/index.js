@@ -12,6 +12,7 @@ const App = () => {
     const [inputArrError, setInputArrError] = useState(false)
     const [inputJson, setInputJson] = useState('')
     const [inputJsonError, setInputJsonError] = useState(false)
+    const [binTree, setBinTree] = useState()
 
     return (
         <>
@@ -28,6 +29,7 @@ const App = () => {
                  inputJsonError = {inputJsonError}
                  setInputJson = {setInputJson}
                  setInputJsonError = {setInputJsonError}
+                 setBinTree = {setBinTree}
             />
         </>      
     )

@@ -8,7 +8,8 @@ const OutputJson = ( {
     inputJson,
     inputJsonError,
     setInputJson,
-    setInputJsonError
+    setInputJsonError,
+    setBinTree
 } ) => {
 
     const handleSetFieldInputJson = (event) => {
@@ -20,7 +21,8 @@ const OutputJson = ( {
     }
 
     const handleProcessJson = () => {
-        if(parseJson(inputJson)) console.log(true)
+        const binTree = parseJson(inputJson)
+        if(binTree) setBinTree(binTree)
         else handleSetFieldsetInputArrError(true)
     }
 
@@ -56,6 +58,7 @@ OutputJson.propTypes = {
     inputJsonError: PropTypes.string,
     setInputJson: PropTypes.func,
     setInputJsonError: PropTypes.func,
+    setBinTree: PropTypes.func
 }
 
 export default OutputJson;

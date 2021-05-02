@@ -1,3 +1,5 @@
+import TreeNode from './treeNode';
+
 const validateNode = (element) => {
     if(typeof element === "string" || typeof element === "number"){
         return true
@@ -44,8 +46,6 @@ const validateJson = (json) =>{
     if(validateSingleKey(json)){
         let keys = Object.keys(json)
         let values = Object.values(json)
-        console.log("keys",keys)
-        console.log("values",values)
         if(keys.length === 2)
             return validateJson(values[1])
         if(keys.length  === 3 ){
@@ -60,11 +60,41 @@ const validateJson = (json) =>{
     return flag
 }
 
+const createDataStrcuture = (json) => {
+    let id
+    let left
+    let right
+
+    let keys = Object.keys(json)
+    let values = Object.values(json)
+    switch (keys.length) {
+        case 1:
+            id = values[0]
+            left = null
+            right = null
+            break;
+        case 2:
+            id = values[0]
+            left = createDataStrcuture((keys[1]))
+            right = null
+            break;
+        case 3:
+            id = values[0]
+            left = values[1] != null ? createDataStrcuture((values[1])) :  null
+            right = createDataStrcuture((values[2]))
+            break;
+        default:
+            break;
+    }
+
+    return new TreeNode(id,left,right)
+}
+
 const parseJson = (json) =>{
     try {
         const pJson = JSON.parse(json)
         if(validateJson(pJson)){
-            return true;
+            return createDataStrcuture(pJson);
         }else{
             return false;
         }

@@ -33,7 +33,7 @@ const OutputJson = ( {
     return (
         <div className="content-wrapper">
             <div className="content">
-                <label for="output_json">Tree text</label>
+                <label htmlFor="output_json">Tree text</label>
                 <textarea 
                     id="output_json" 
                     rows="10" 
@@ -47,7 +47,12 @@ const OutputJson = ( {
                         <span>Parse error, please check the input and try again</span>
                     }
                 </div>
-                <button onClick={handleProcessJson}>Process</button>
+                <button 
+                    disabled={!inputJson}
+                    onClick={handleProcessJson}
+                >
+                    Process
+                </button>
             </div>
         </div>
     )
@@ -55,7 +60,7 @@ const OutputJson = ( {
 
 OutputJson.propTypes = {
     inputJson: PropTypes.string,
-    inputJsonError: PropTypes.string,
+    inputJsonError: PropTypes.bool,
     setInputJson: PropTypes.func,
     setInputJsonError: PropTypes.func,
     setBinTree: PropTypes.func

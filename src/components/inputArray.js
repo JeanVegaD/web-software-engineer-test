@@ -48,7 +48,7 @@ const InputArray = ( {
         <div className="content-wrapper">
             <div className="content">
                 <h1>Process the input into a tree</h1>
-                <label for="input_array">Tree source</label>
+                <label htmlFor="input_array">Tree source</label>
                 <input
                     type="text"
                     id="input_array"
@@ -85,7 +85,7 @@ const InputArray = ( {
 
 InputArray.propTypes = {
     inputArr: PropTypes.string,
-    inputArrError: PropTypes.string,
+    inputArrError: PropTypes.bool,
     setInputArr: PropTypes.func,
     setInputArrError: PropTypes.func,
     setInputJson: PropTypes.func,

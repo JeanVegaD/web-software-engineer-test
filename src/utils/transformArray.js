@@ -75,7 +75,7 @@ const createDataStrcuture = (array) => {
 }
 
 const parseArray = (array) =>{
-    if(validateArray(array)) return JSON.stringify(createDataStrcuture(array))
+    if(validateArray(array)) return JSON.stringify(createDataStrcuture(array),null,2)
     else return false
 }
 

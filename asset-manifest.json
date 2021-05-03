@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Web-Software-Engineer-Test/static/css/main.fc1e9f26.chunk.css",
+    "main.js": "/Web-Software-Engineer-Test/static/js/main.f5a3d0d3.chunk.js",
+    "main.js.map": "/Web-Software-Engineer-Test/static/js/main.f5a3d0d3.chunk.js.map",
+    "runtime-main.js": "/Web-Software-Engineer-Test/static/js/runtime-main.2adb8193.js",
+    "runtime-main.js.map": "/Web-Software-Engineer-Test/static/js/runtime-main.2adb8193.js.map",
+    "static/js/2.1d2f4c00.chunk.js": "/Web-Software-Engineer-Test/static/js/2.1d2f4c00.chunk.js",
+    "static/js/2.1d2f4c00.chunk.js.map": "/Web-Software-Engineer-Test/static/js/2.1d2f4c00.chunk.js.map",
+    "static/js/3.327e3db3.chunk.js": "/Web-Software-Engineer-Test/static/js/3.327e3db3.chunk.js",
+    "static/js/3.327e3db3.chunk.js.map": "/Web-Software-Engineer-Test/static/js/3.327e3db3.chunk.js.map",
+    "index.html": "/Web-Software-Engineer-Test/index.html",
+    "static/css/main.fc1e9f26.chunk.css.map": "/Web-Software-Engineer-Test/static/css/main.fc1e9f26.chunk.css.map",
+    "static/js/2.1d2f4c00.chunk.js.LICENSE.txt": "/Web-Software-Engineer-Test/static/js/2.1d2f4c00.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2adb8193.js",
+    "static/js/2.1d2f4c00.chunk.js",
+    "static/css/main.fc1e9f26.chunk.css",
+    "static/js/main.f5a3d0d3.chunk.js"
+  ]
+}

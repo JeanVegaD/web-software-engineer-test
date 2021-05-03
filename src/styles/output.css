@@ -3,17 +3,26 @@
     overflow-x: auto;
 }
 
+.parentDeepst{
+    width: fit-content;
+    padding: 10px; 
+    border: solid 2px green;
+    margin: 5px;
+
+}
+
 .parent{
     width: fit-content;
     padding: 10px; 
-    border: solid 2px purple;
+    border: solid 1px purple;
+    background-color: #f6f6f6;
     margin: 5px;
       
 }
 
 .children{
     padding: 10px;   
-    border: solid 2px peru;
+    border: solid 1px peru;
     display: flex;
     margin-top: 10px;
     

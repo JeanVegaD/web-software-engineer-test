@@ -4,14 +4,15 @@ import PropTypes from 'prop-types'
 import "../styles/output.css"
 
 const Output = ( {binTree}) => {
-
+    
     const parseBinTree = ( node ) =>{
         const id = node?.id
         const left = node?.left
         const right = node?.right
+        const isDeepest = node?.isDeepest
 
         return(
-            <div className="parent">
+            <div className={isDeepest ? "parentDeepst" : "parent"} >
                 {node &&
                     <>
                         <p className="id">{id}</p>
@@ -30,12 +31,13 @@ const Output = ( {binTree}) => {
             </div>
         )
     }
-    
+
     return (
         <div className="content-wrapper">
             <div className="content">
                 <h1>Output</h1>
                 <div className="outputArea">
+                    {binTree && binTree.getDeeperNode()}
                     {binTree && parseBinTree(binTree)}
                 </div>
                 

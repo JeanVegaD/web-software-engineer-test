@@ -46,7 +46,7 @@ class TreeNode {
     if(this.hasChildren(node)){
       let tempLeft = node.left? this.getDeeperNodeAux(node.left, depth + 1 , node) : null
       let tempRight = node.right? this.getDeeperNodeAux(node.right, depth + 1 , node) : null
-
+      
       if(tempLeft === null){
         return tempRight
       }
@@ -54,7 +54,7 @@ class TreeNode {
         return tempLeft
       }
       else if(tempLeft.depth === tempRight.depth){
-        node.depth = node.depth + 1
+        node.depth = tempLeft.depth
         return node
       }
       else if(tempLeft.depth > tempRight.depth){
@@ -63,11 +63,9 @@ class TreeNode {
       else {
         return tempRight 
       }
-
     }else{
       return node
     }
-
   }
 
   getDeeperNode(){

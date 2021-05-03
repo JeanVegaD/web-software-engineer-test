@@ -73,7 +73,7 @@ In the following test, a series of problems that web developers face every day w
 
 #### Description
 
-For this first problem, a function must be created, which receives as an argument an array of the following type: `[id, leftChild, rightChild]` and which returns parsed data as JSON.
+For this first problem, a function must be created. It should receive as an argument an array of the following type: [id, leftChild, rightChild] and return parsed data as `JSON`.
 
 **input:**
 
@@ -100,7 +100,7 @@ For this first problem, a function must be created, which receives as an argumen
 
 #### Solution
 
-To perform this conversion, the array underwent different steps to obtain the expected result::
+To perform this conversion, the array underwent different steps to obtain the expected result:
 
 1. Validate the syntax of the array.
 2. Validate the structure of the array.
@@ -124,24 +124,24 @@ The functions that analyze the structure of the expected array can receive the f
 
 This problem consists of creating a simple web page, which allows the user to make use of the functionality created in the previous problem.
 
-In addition, an option is added where the result is displayed in JSON, which can be edited from this section to show a result on the screen in the form of squares that follows the structure of the tree created.
+In addition, an option is added where the result is displayed in `JSON`, which can be edited from this section to show a result on the screen in the form of squares that follows the structure of the tree created.
 
 #### Solution
 
-For this problem, a web page was created which has been very minimalist and which follows a very consistent design line.
+For this problem, a web page was created. It is minimalist and follows a very consistent design line.
 
 The necessary visual validations are established to provide the user with a better experience when using the application.
 
 This website design can be used on different devices, following the mobile-first methodology.
 
-For the validation of the json file, a process very similar to that of problem 1 was used.
+For the validation of the `JSON` file, a process very similar to that of problem 1 was used.
 
 1. Validate the `JSON` syntax.
 2. Validate the structure of the `JSON`.
 3. Convert the `JSON` to an object of type` NodeTree`.
 4. Return the object to the component in charge of painting the objects.
 
-To visualize the output in the form of a tree, the created object is used and by means of a recursive function, the squares and their children are painted as the case may be.
+To visualize the output in the form of a tree, the created object is used. And the squares and their children are painted through a recursive function.
 
 #### Examples
 
@@ -158,14 +158,14 @@ For this problem a recursive function is used that finds and marks the deepest s
 
 The algorithm is as follows:
 
-1. I position myself on a node.
-2. I assign the depth of the node
-3. I check if the node has children.
+1. Select a node.
+2. Assign the depth of the node
+3. Check if the node has children.
 4. If the node has children
-     - I define a temporary variable with each child of node `tempLeft` and` tempRight`
-         - I repeat the process from step 1 with each child of the node, increasing the depth by 1.
+     - Define a temporary variable with each child of node `tempLeft` and` tempRight`
+         - Repeat the process from step 1 with each child of the node, increasing the depth by 1.
          - In case the node does not have any children, the variable is assigned a `null`.
-     - I compare the variables and return according to the case:
+     - Compare the variables and return according to the case:
          - `tempLeft` is null return` tempRight`.
          - `tempRight` is null return` tempLeft`.
          - The depth of the `tempLeft` is equal to that of the` tempRight` return the current node.

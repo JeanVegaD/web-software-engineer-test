@@ -64,9 +64,9 @@ const createDataStrcuture = (json) => {
     let id
     let left
     let right
-
     let keys = Object.keys(json)
     let values = Object.values(json)
+    
     switch (keys.length) {
         case 1:
             id = values[0]
@@ -75,7 +75,7 @@ const createDataStrcuture = (json) => {
             break;
         case 2:
             id = values[0]
-            left = createDataStrcuture((keys[1]))
+            left = createDataStrcuture((values[1]))
             right = null
             break;
         case 3:

@@ -6,6 +6,9 @@ class TreeNode {
       this.left = left
       this.right = right
     }
+    else if(left != null && right == null){
+      this.left = left
+    }
     else if(left === null && right != null){
       this.left = null
       this.right = right

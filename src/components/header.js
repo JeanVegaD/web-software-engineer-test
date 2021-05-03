@@ -1,4 +1,5 @@
 import React from "react"
+
 import "../styles/header.css"
 
 const Header = () => {
@@ -12,8 +13,13 @@ const Header = () => {
         <div className="header-wrapper">
             <div className="header">
                 <h1>About this test</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-                <button>Read more</button>
+                <p>In the following test, a series of problems that web developers face every day will be exposed. 
+                <br /> With it, problem solving skills will be put to the test using the most advanced web technology, to give users the best possible experience.</p>
+                <button
+                    onClick={() => window.open('https://github.com/JeanVegaD/web-software-engineer-test/blob/master/README.md', "_blank")}
+                >
+                    Read more
+                </button>
             </div>
         </div>
     </div>

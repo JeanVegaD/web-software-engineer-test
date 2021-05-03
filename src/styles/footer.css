@@ -1,0 +1,32 @@
+.footer-wrapper{
+    width: 100%;
+    margin-top: 50px;
+    background-color: #f6f6f6;
+}
+
+.footer{
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px 0 10px 0;
+}
+
+.footer h3{
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.iconsBox{
+    display: flex;
+    justify-content: center;
+}
+
+.iconsBox a {
+    color: black;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.iconsBox a:hover{
+    color: #0067B8;
+}

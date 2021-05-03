@@ -5,6 +5,7 @@ import Header from '../components/header.js'
 import InputArray from '../components/inputArray.js'
 import OutputJson from '../components/outputJson.js'
 import Output from '../components/output.js'
+import Footer from '../components/footer.js'
 
 const App = () => {
     const [inputArr, setInputArr] = useState('')
@@ -33,6 +34,7 @@ const App = () => {
             <Output 
                 binTree={binTree}
             />
+            <Footer />
         </>      
     )
 }

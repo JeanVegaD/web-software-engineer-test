@@ -6,6 +6,11 @@ In the following test, a series of problems that web developers face every day w
 
 ## Table of Contents
 
+ 1. About The Project
+ 2. Content Table
+ 3. Installation
+ 4. Problem resolution
+
 ## Installation
 
 ### Prerequisites
@@ -102,7 +107,7 @@ To perform this conversion, the array underwent different steps to obtain the ex
 3. Convert the array to an object of type `NodeTree`.
 4. Transform the object into a `JSON`.
 
-**Restricciones**
+**Restrictions**
 
 The functions that analyze the structure of the expected array can receive the following data:
 

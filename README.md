@@ -1,5 +1,7 @@
 # Web Software Engineer Test
 
+![Web Software Engineer Test](https://raw.githubusercontent.com/JeanVegaD/web-software-engineer-test/master/src/assets/screen5.png)
+
 ## About the Project
 
 In the following test, a series of problems that web developers face every day will be exposed. With it, problem solving skills will be put to the test using the most advanced web technology, to give users the best possible experience.
@@ -117,6 +119,12 @@ The functions that analyze the structure of the expected array can receive the f
 
 #### Examples
 
+![Input Example](https://raw.githubusercontent.com/JeanVegaD/web-software-engineer-test/master/src/assets/screen1.PNG)
+
+![Input Example](https://raw.githubusercontent.com/JeanVegaD/web-software-engineer-test/master/src/assets/screen3.PNG)
+
+![Output Example](https://raw.githubusercontent.com/JeanVegaD/web-software-engineer-test/master/src/assets/screen2.PNG)
+
 
 ### Problem 2
 
@@ -145,6 +153,7 @@ To visualize the output in the form of a tree, the created object is used. And t
 
 #### Examples
 
+![Output Example](https://raw.githubusercontent.com/JeanVegaD/web-software-engineer-test/master/src/assets/screen4.png)
 
 ### Problem 3
 
@@ -176,3 +185,5 @@ The algorithm is as follows:
 At the end of this process, a label is assigned to the deepest node so that the rendering component can identify it and paint it as requested. 
 
 #### Examples
+
+![Input Example](https://raw.githubusercontent.com/JeanVegaD/web-software-engineer-test/master/src/assets/screen6.PNG)
